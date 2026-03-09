@@ -7,6 +7,7 @@ import BiomarkerSection from "../components/BiomarkerSection";
 import ProgrammesSection from "../components/ProgrammesSection";
 import HubSection from "../components/HubSection";
 import { GovernanceSection, PromiseSection, ContactSection, Footer } from "../components/GovernanceSection";
+import { PartnersSection } from "@/components/PartnersSection";
 
 const Index = () => {
   return (
@@ -21,6 +22,7 @@ const Index = () => {
       <HubSection />
       <GovernanceSection />
       <PromiseSection />
+       <PartnersSection />
       <ContactSection />
       <Footer />
     </div>
