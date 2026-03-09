@@ -1,0 +1,6 @@
+/* Reset root constraints for full-width layout */
+#root {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
