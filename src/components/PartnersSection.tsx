@@ -19,7 +19,7 @@ export function PartnersSection() {
       id: 2,
       name: "Strategic Partner",
       location: "Global Network",
-      image: "/path-to-your-svg/Frame-14.svg", // Replace with actual SVG path
+      image: "https://wimpoleclinic.com/wp-content/uploads/WIMPOLE_CLINIC_FULL-COLOUR.png.webp", // Replace with actual SVG path
       // Fallback in case SVG doesn't load
       fallbackContent: (
         <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-[#c9a84c]/10 to-transparent">

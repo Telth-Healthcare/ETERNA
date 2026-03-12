@@ -1,5 +1,6 @@
-import { useScrollReveal } from "../hooks/useScrollReveal";
 import { useEffect, useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { useScrollReveal } from "../hooks/useScrollReveal";
 
 const programmes = [
   {
@@ -41,6 +42,7 @@ function useReveal(threshold = 0.1) {
 function ProgrammeCard({ prog, index }: { prog: typeof programmes[0]; index: number }) {
   const { ref, visible } = useScrollReveal(0.1);
   const [hovered, setHovered] = useState(false);
+  const navigate = useNavigate();
   const [btnHovered, setBtnHovered] = useState(false);
 
   return (
@@ -244,6 +246,7 @@ function ProgrammeCard({ prog, index }: { prog: typeof programmes[0]; index: num
 
           {/* CTA Button */}
           <button
+          onClick={() => navigate('/contact')}
             onMouseEnter={() => setBtnHovered(true)}
             onMouseLeave={() => setBtnHovered(false)}
             className="relative mt-6 w-full py-3 text-[10px] tracking-[0.2em] uppercase overflow-hidden"

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const pills = [
   { label: "Biological Age", value: "43", sub: "Chronological: 54", pos: "top-[8%] right-[-56px]", posMobile: "top-[5%] right-[-20px]", delay: "0s" },
@@ -63,6 +64,8 @@ function HumanFigure() {
 
 export default function HeroSection() {
   const [mounted, setMounted] = useState(false);
+  const navigate = useNavigate();
+
   useEffect(() => { setTimeout(() => setMounted(true), 100); }, []);
 
   return (
@@ -95,12 +98,12 @@ export default function HeroSection() {
             Precision in care.{" "}Designed with affordability in mind.
           </p>
           <div className="flex flex-wrap gap-3 mb-10">
-            <button className="bg-[#c9a84c] text-[#0a0a0a] px-6 sm:px-8 py-3.5 text-[10px] tracking-[0.22em] uppercase font-semibold hover:bg-[#e2c97e] transition-colors duration-300">
+            <button onClick={() => navigate('/contact')} className="bg-[#c9a84c] text-[#0a0a0a] px-6 sm:px-8 py-3.5 text-[10px] tracking-[0.22em] uppercase font-semibold hover:bg-[#e2c97e] transition-colors duration-300">
               Book Baseline Assessment
             </button>
-            <button className="border border-[#c9a84c]/30 text-[#f0ead8] px-6 sm:px-8 py-3.5 text-[10px] tracking-[0.22em] uppercase hover:border-[#c9a84c] hover:text-[#c9a84c] transition-all duration-300">
+            {/* <button className="border border-[#c9a84c]/30 text-[#f0ead8] px-6 sm:px-8 py-3.5 text-[10px] tracking-[0.22em] uppercase hover:border-[#c9a84c] hover:text-[#c9a84c] transition-all duration-300">
               How It Works
-            </button>
+            </button> */}
           </div>
           {/* Accreditation strip */}
           <div className="flex flex-wrap gap-4">

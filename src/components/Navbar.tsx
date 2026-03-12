@@ -1,17 +1,19 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+// import logo from "../assets/eterna logo.png"
+import { useNavigate } from "react-router-dom";
 
 const links = [
   { label: "The Model", href: "#model" },
   { label: "Biomarkers", href: "#biomarkers" },
   { label: "Programmes", href: "#programmes" },
   { label: "The Hub", href: "#hub" },
-  { label: "Contact", href: "#contact" },
 ];
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 80);
@@ -76,7 +78,7 @@ export default function Navbar() {
               {l.label}
             </a>
           ))}
-          <button className="sm:hidden border border-[#c9a84c] text-[#c9a84c] px-5 py-2 text-[10px] tracking-[0.2em] uppercase font-medium">
+          <button onClick={() => navigate('/contact')} className="sm:hidden border border-[#c9a84c] text-[#c9a84c] px-5 py-2 text-[10px] tracking-[0.2em] uppercase font-medium">
             Book Assessment
           </button>
         </div>

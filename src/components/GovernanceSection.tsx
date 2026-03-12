@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { useScrollReveal } from "../hooks/useScrollReveal";
 import { useEffect, useRef, useState } from "react";
 
@@ -126,6 +127,7 @@ export function GovernanceSection() {
 export function PromiseSection() {
   const { ref, visible } = useScrollReveal(0.2);
   const [activeStep, setActiveStep] = useState(0);
+  const navigate = useNavigate();
   
   // Auto-rotate promise steps
   useEffect(() => {
@@ -230,17 +232,17 @@ export function PromiseSection() {
         <div className={`flex gap-3 sm:gap-4 justify-center flex-wrap transition-all duration-1000 ${
           visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
         }`} style={{ transitionDelay: "500ms" }}>
-          <button className="group relative bg-[#c9a84c] text-[#0a0a0a] px-6 sm:px-8 py-3.5 text-[10px] tracking-[0.22em] uppercase font-semibold overflow-hidden">
+          <button onClick={() => navigate('/contact')} className="group relative bg-[#c9a84c] text-[#0a0a0a] px-6 sm:px-8 py-3.5 text-[10px] tracking-[0.22em] uppercase font-semibold overflow-hidden">
             <span className="relative z-10">Book Baseline Assessment</span>
             <span className="absolute inset-0 bg-[#e2c97e] transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500" />
           </button>
           
-          <button className="group relative border border-[#c9a84c]/30 text-[#f0ead8] px-6 sm:px-8 py-3.5 text-[10px] tracking-[0.22em] uppercase overflow-hidden">
+          <button onClick={() => navigate('/contact')} className="group relative border border-[#c9a84c]/30 text-[#f0ead8] px-6 sm:px-8 py-3.5 text-[10px] tracking-[0.22em] uppercase overflow-hidden">
             <span className="relative z-10">Buy a Care Plan</span>
             <span className="absolute inset-0 bg-[#c9a84c]/10 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
           </button>
           
-          <button className="group relative border border-[#c9a84c]/30 text-[#f0ead8] px-6 sm:px-8 py-3.5 text-[10px] tracking-[0.22em] uppercase overflow-hidden">
+          <button onClick={() => navigate('/contact')} className="group relative border border-[#c9a84c]/30 text-[#f0ead8] px-6 sm:px-8 py-3.5 text-[10px] tracking-[0.22em] uppercase overflow-hidden">
             <span className="relative z-10">Partner / Franchise</span>
             <span className="absolute inset-0 bg-[#c9a84c]/10 transform -translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
           </button>
