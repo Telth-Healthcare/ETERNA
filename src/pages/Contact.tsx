@@ -70,7 +70,7 @@ export default function Contact() {
     setSubmitStatus('idle');
     
     try {
-      const response = await fetch('https://formsubmit.co/ajax/shanmugaraj@mytelth.com', {
+      const response = await fetch('https://formsubmit.co/ajax/info@mytelth.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -90,7 +90,6 @@ export default function Contact() {
         setSubmitStatus('success');
         setFormData({ name: '', email: '', phone: '', city: '' });
         
-        // Redirect back to home after 3 seconds
         setTimeout(() => {
           navigate('/');
         }, 3000);
