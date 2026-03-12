@@ -54,7 +54,7 @@ export default function Navbar() {
       </div>
 
       <div className="flex items-center gap-3">
-        <button className="hidden sm:block border border-[#c9a84c] text-[#c9a84c] hover:bg-[#c9a84c] hover:text-[#0a0a0a] px-5 py-2 text-[10px] tracking-[0.2em] uppercase transition-all duration-300 font-medium">
+        <button onClick={() => navigate('/contact')} className="hidden sm:block border border-[#c9a84c] text-[#c9a84c] hover:bg-[#c9a84c] hover:text-[#0a0a0a] px-5 py-2 text-[10px] tracking-[0.2em] uppercase transition-all duration-300 font-medium">
           Book Assessment
         </button>
         <button
