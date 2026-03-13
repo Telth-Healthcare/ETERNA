@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-// import logo from "../assets/eterna logo.png"
+import logo from "../assets/eterna_logo.svg"
 import { useNavigate } from "react-router-dom";
 
 const links = [
@@ -29,17 +29,14 @@ export default function Navbar() {
           : "py-6 bg-gradient-to-b from-[#0a0a0a]/90 to-transparent"
       }`}
     >
-      <div className="flex flex-col leading-none">
-        <span
-          className="text-[#c9a84c] tracking-[0.22em] text-lg"
-          style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 300 }}
-        >
-          ETERNA
-        </span>
-        <span className="text-[#f0ead8]/40 tracking-[0.28em] text-[9px] uppercase mt-0.5">
-          by Harley Health System
-        </span>
-      </div>
+      {/* Logo */}
+      <a href="/" className="flex items-center">
+        <img 
+          src={logo} 
+          alt="Eterna by Harley Health System" 
+          className="h-12 w-auto" // Adjust height as needed
+        />
+      </a>
 
       <div className="hidden md:flex gap-8">
         {links.map((l) => (
@@ -78,7 +75,7 @@ export default function Navbar() {
               {l.label}
             </a>
           ))}
-          <button onClick={() => navigate('/contact')} className="sm:hidden border border-[#c9a84c] text-[#c9a84c] px-5 py-2 text-[10px] tracking-[0.2em] uppercase font-medium">
+          <button className="sm:hidden border border-[#c9a84c] text-[#c9a84c] px-5 py-2 text-[10px] tracking-[0.2em] uppercase font-medium">
             Book Assessment
           </button>
         </div>
