@@ -70,7 +70,7 @@ export default function Contact() {
     setSubmitStatus('idle');
     
     try {
-      const response = await fetch('https://formsubmit.co/ajax/info@mytelth.com', {
+      const response = await fetch('http://localhost:3000/api/submit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
