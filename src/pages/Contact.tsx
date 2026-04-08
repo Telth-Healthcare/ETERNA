@@ -70,7 +70,7 @@ export default function Contact() {
     setSubmitStatus('idle');
     
     try {
-      const response = await fetch('https://contactforms-henna.vercel.app/api/submit', {
+      const response = await fetch('https://enquiry.mytelth.com/api/submit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
