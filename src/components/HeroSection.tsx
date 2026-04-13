@@ -86,9 +86,9 @@ export default function HeroSection() {
             className="text-[#f0ead8] leading-[1.08] mb-6"
             style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 300, fontSize: "clamp(2.4rem,5vw,4.2rem)" }}
           >
-            Luxury Longevity,<br />
-            <em className="text-[#e2c97e]">Engineered</em><br />
-            for Proof
+            Live Longer,<br />
+            <em className="text-[#e2c97e]">Live better</em><br />
+            
           </h1>
           <p className="text-[#f0ead8]/45 text-sm leading-relaxed mb-2 max-w-lg">
             A premium, data-driven longevity program designed to measure, monitor, and improve how you age.
