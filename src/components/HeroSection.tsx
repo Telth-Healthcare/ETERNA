@@ -22,6 +22,8 @@ function DataPill({ label, value, sub, pos, delay }: { label: string; value: str
 }
 
 function HumanFigure() {
+
+    
   return (
     <div className="relative w-72 h-[500px]">
       {/* Body silhouette */}
@@ -91,7 +93,7 @@ export default function HeroSection() {
             
           </h1>
           <p className="text-[#f0ead8]/45 text-sm leading-relaxed mb-2 max-w-lg">
-            A premium, data-driven longevity program designed to measure, monitor, and improve how you age.
+           Eterna by Harley Health combines advanced AI diagnostics, 250+ biomarker analysis, and personalized P3DSC recovery algorithms to optimize every organ, reverse biological age, and restore your natural vitality — from the inside out.
           </p>
           <p className="text-[#f0ead8]/30 text-xs leading-relaxed mb-8 max-w-lg">
             Luxury in delivery.{" "}

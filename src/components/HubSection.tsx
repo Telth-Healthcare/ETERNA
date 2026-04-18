@@ -8,7 +8,7 @@ const features = [
 ];
 
 const specs = [
-  { name: "Biomarkers Assessed", value: "300+" },
+  { name: "Biomarkers Assessed", value: "250+" },
   { name: "Imaging Technology", value: "Hybrid DEXA + fMRI" },
   { name: "AI Engine", value: "Quantum-AI" },
   { name: "Regulatory Standards", value: "FDA · CE · UKCA · CDSCO" },

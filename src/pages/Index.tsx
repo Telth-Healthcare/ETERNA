@@ -8,6 +8,10 @@ import ProgrammesSection from "../components/ProgrammesSection";
 import HubSection from "../components/HubSection";
 import { GovernanceSection, PromiseSection, ContactSection, Footer } from "../components/GovernanceSection";
 import { PartnersSection } from "@/components/PartnersSection";
+import Pillars from "@/components/Pillars";
+import Biomarkers from "@/components/Biomarkers";
+import Recovery from "@/components/Recovery";
+import Algorithm from "@/components/Algorithm";
 
 const Index = () => {
   return (
@@ -15,9 +19,13 @@ const Index = () => {
       <Navbar />
       <HeroSection />
       <WhyEterna />
+      <Pillars/>
       <ModelSection />
+      <Algorithm/>
       <StatsSection />
       <BiomarkerSection />
+      <Biomarkers/>
+      <Recovery/>
       <ProgrammesSection />
       <HubSection />
       <GovernanceSection />

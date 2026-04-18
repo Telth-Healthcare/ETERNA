@@ -2,7 +2,7 @@ import { useCountUp } from "../hooks/useScrollReveal";
 import { useEffect, useRef, useState } from "react";
 
 const stats = [
-  { target: 300, suffix: "+", label: "Biomarkers\nAssessed" },
+  { target: 250, suffix: "+", label: "Biomarkers\nAssessed" },
   { target: 7, suffix: "", label: "Biomarker Framework\nLayers" },
   { target: 6, suffix: "", label: "Steps from Baseline\nto Proof" },
   { target: 365, suffix: "", label: "Day Maximum\nProgramme" },

@@ -2,7 +2,7 @@ import { useScrollReveal } from "../hooks/useScrollReveal";
 
 const questions = [
   { q: "What is this person vulnerable to?", a: "Susceptibility & risk biomarker mapping before disease appears", highlight: false },
-  { q: "What is happening beneath the surface?", a: "300+ biomarker assessment. Organ-age baseline. Whole body data pool.", highlight: false },
+  { q: "What is happening beneath the surface?", a: "250+ biomarker assessment. Organ-age baseline. Whole body data pool.", highlight: false },
   { q: "Which intervention is most suitable?", a: "P3DSC modelling with Quantum-AI — clinician accountable for every decision", highlight: false },
   { q: "Is the plan working biologically?", a: "Proof through re-measurement at every phase gate", highlight: true },
 ];
@@ -56,7 +56,8 @@ export default function WhyEterna() {
     <section id="why" className="bg-[#0a0a0a] px-4 md:px-8 lg:px-16 py-16 md:py-28">
       <div className="flex items-center gap-3 mb-4">
         <div className="w-6 h-px bg-[#c9a84c]" />
-        <span className="text-[#c9a84c] text-[10px] tracking-[0.38em] uppercase">Why Eterna</span>
+        <span className="text-[#c9a84c] text-[10px] tracking-[0.38em] uppercase">The Eterna Philosophy
+</span>
       </div>
       <h2 className="text-[#f0ead8] leading-[1.12] mb-12" style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 300, fontSize: "clamp(2rem,3.2vw,3.2rem)" }}>
         Most programmes stop at a <em className="text-[#e2c97e]">report</em>
@@ -64,7 +65,9 @@ export default function WhyEterna() {
       <div ref={ref} className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
         <div>
           <p className="text-[#f0ead8]/45 text-sm leading-relaxed mb-8 max-w-lg">
-            Eterna is built as an end-to-end system: diagnostics to decisioning, decisioning to a phased plan, and a phased plan to verified outcomes. Every recommendation is anchored to biomarkers, safety controls, and measurable targets.
+           Eterna by Harley Health is the world's most comprehensive holistic longevity program, powered by Telth AI Health Hubs and the revolutionary DEXA Longevity Hub. We go far beyond standard health checks.
+
+Our integrated approach establishes your individual baseline, creates a need-based genetic profile, and deploys the proprietary P3DSC algorithm to map a personalized recovery plan — combining medical intervention, nutritional science, lifestyle optimization, and cosmetic restoration to deliver true biological age reversal and physical vitality.
           </p>
           <div className="flex flex-col gap-5">
             {questions.map(({ q, a, highlight }, i) => (

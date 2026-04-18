@@ -96,8 +96,8 @@ export default function ModelSection() {
               const isDone = i < activeStep;
               const isActive = i === activeStep;
               return (
-                <div key={s.num} className="timeline-node" style={{ flex: isLast ? "0 0 auto" : 1 }}>
-                  <div className={`timeline-dot ${isActive ? "active" : isDone ? "done" : "upcoming"}`}>
+                <div key={s.num} className="timeline-node " style={{ flex: isLast ? "0 0 auto" : 1 }}>
+                  <div className={`timeline-dot  ${isActive ? "active" : isDone ? "done" : "upcoming"}`}>
                     {s.num}
                   </div>
                   <div className={`timeline-label ${isActive ? "active" : ""}`}>
