@@ -87,7 +87,7 @@ export default function Pillars() {
             >
               {p.title}
             </h3>
-            <p className="text-sm leading-relaxed font-light" style={{ color: 'var(--body-text)' }}>
+            <p className="text-xs leading-relaxed font-light" style={{ color: 'var(--body-text)' }}>
               {p.desc}
             </p>
 
@@ -99,7 +99,7 @@ export default function Pillars() {
               {p.features.map((f, j) => (
                 <li
                   key={j}
-                  className="flex items-center gap-2.5 py-2 text-sm font-light"
+                  className="flex items-center gap-2.5 py-2 text-xs font-light"
                   style={{ color: 'var(--body-text)' }}
                 >
                   <span style={{ color: 'var(--gold)', fontSize: 6 }}>◆</span>

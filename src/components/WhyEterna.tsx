@@ -64,9 +64,9 @@ export default function WhyEterna() {
       </h2>
       <div ref={ref} className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
         <div>
-          <p className="text-[#f0ead8]/45 text-sm leading-relaxed mb-8 max-w-lg">
+          <p className="text-[#f0ead8]/45 text-xs leading-relaxed mb-8 max-w-lg">
            Eterna by Harley Health is the world's most comprehensive holistic longevity program, powered by Telth AI Health Hubs and the revolutionary DEXA Longevity Hub. We go far beyond standard health checks.
-
+               <br />
 Our integrated approach establishes your individual baseline, creates a need-based genetic profile, and deploys the proprietary P3DSC algorithm to map a personalized recovery plan — combining medical intervention, nutritional science, lifestyle optimization, and cosmetic restoration to deliver true biological age reversal and physical vitality.
           </p>
           <div className="flex flex-col gap-5">
